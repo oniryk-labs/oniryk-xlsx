@@ -1,0 +1,36 @@
+{
+  "name": "@oniryk/xlsx",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/oniryk-labs/oniryk-xlsx.git",
+    "type": "git"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "brunoziie (https://github.com/brunoziie)",
+  "license": "ISC",
+  "description": "A lightweight, efficient TypeScript library for generating single-sheet Excel XLSX files with support for large datasets",
+  "dependencies": {
+    "adm-zip": "^0.5.16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/node": "^22.12.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
