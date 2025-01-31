@@ -131,4 +131,6 @@ Contributions are welcome! Please ensure:
 
 ## License
 
-ISC License
+Distributed under the ISC License. See [LICENSE](LICENSE) for more information.
+
+> This documentation was generated using AI tools. Please report any inaccuracies through GitHub issues.
