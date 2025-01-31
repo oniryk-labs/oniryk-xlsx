@@ -1,6 +1,6 @@
 {
   "name": "@oniryk/xlsx",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "author": "brunoziie (https://github.com/brunoziie)",
   "license": "ISC",
