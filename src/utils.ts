@@ -21,7 +21,8 @@ const entities = {
  */
 export function escapeXML(value: any) {
   if (typeof value !== 'string') return value;
-  return value.replace(/[&<>"']/g, (char: string) => {
+
+  return value.replace(/[\x00-\x1F\x7F]/g, '?').replace(/[&<>"'\\]/g, (char: string) => {
     return entities[char as keyof typeof entities];
   });
 }
